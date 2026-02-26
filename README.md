@@ -38,4 +38,13 @@ You don't need to type the full filename anymore. I have configured a start scri
 
 npm start
 
+
+⚙️ Default Settings
+By default, hitting Enter without typing a name will audit @stayoutoftherz.
+🔜 Roadmap
+[ ] v0.0.2: Detailed list of individual RC delegation slots.
+[ ] v0.0.3: Visual manabar for HP/RC regeneration status.
+Author: @oneteacher365
+License: MIT
+
    
