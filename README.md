@@ -27,5 +27,15 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your system or Termu
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/oneteacher365/rc-delegations.git](https://github.com/oneteacher365/rc-delegations.git)
-   cd delegations-manager
+   cd rc-delegations
+2. Install Dependencies:
+Running this command will automatically read the package.json and install the @hiveio/dhive library for you:
+
+npm install
+
+🚀 Running the Auditor
+You don't need to type the full filename anymore. I have configured a start script for you:
+
+npm start
+
    
