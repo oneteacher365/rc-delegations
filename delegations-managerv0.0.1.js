@@ -76,7 +76,7 @@ function showPrompt() {
     process.stdout.write('\x1Bc');
     console.log(`\n HIVE TERMINAL v0.1`);
     console.log(` -----------------`);
-    process.stdout.write(` 👤 Target (Default: glimpsytips.dex): `);
+    process.stdout.write(` 👤 Target (Default: stayoutoftherz): `);
 }
 
 rl.on('line', (input) => {
