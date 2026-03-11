@@ -1,50 +1,29 @@
-# Hive Delegation Manager v0.0.1 (Slim Edition) 🚀
+# Hive Delegation Manager v0.0.2 🚀
 
-A lightweight, terminal-based auditor for the Hive blockchain, optimized specifically for **Termux** and mobile users. 
+A lightweight, terminal-based auditor for the Hive blockchain, optimized specifically for **Termux**.
 
-### 📱 Features
-- **Mobile Optimized:** 45-character width prevents UI wrapping on small screens.
-- **HP Auditor:** Lists detailed outgoing HP delegations and calculates Available vs. Total HP.
-- **RC Insights:** Displays total outgoing Resource Credits converted into human-readable **HP units**.
-- **User Friendly:** Simple 'X' to exit and persistent input for auditing multiple accounts.
-
-📖 Extended Description
-The Hive Delegation Manager was born out of a specific need: a way to audit account resources on the go without the UI breaking. Most CLI tools are built for wide desktop monitors; this script is built for the Termux environment on mobile devices.
-🎯 Problem & Solution
-The Problem: Standard terminal outputs wrap and become unreadable on narrow smartphone screens (Portrait mode).
-The Solution: A strictly 45-character wide interface that ensures a clean, "box-style" dashboard even on small screens.
-⚡ Technical Highlights
-Global Ratio Logic: Instead of showing raw VESTS, the script pulls live data from the getDynamicGlobalProperties API to convert all values into real Hive Power (HP).
-RC-to-HP Conversion: Most users find raw RC numbers confusing. This script translates delegated Resource Credits into their HP Equivalent, allowing you to see exactly how much "Power" you are sharing with others.
-Persistent Interaction: Unlike one-off scripts, this keeps the session open, allowing you to audit multiple accounts in a single run.
-🤝 Community Focus
-The default audit target is set to @stayoutoftherz, honoring the developers who keep the Hive ecosystem moving forward. This tool is open for anyone to fork and adapt for their own curation or delegation tracking needs.
+### 📱 New in v0.0.2
+- **Visual Dashboard:** Added a TUI (Terminal User Interface) using the `blessed` library.
+- **Progress Bars:** Real-time visual representation of available HP and RC percentages.
+- **Color Coding:** Bars change from Green to Red based on resource depletion.
+- **RC List Preview:** Initial logic for viewing RC delegation slots.
 
 ### 🛠️ Installation
-
-Ensure you have [Node.js](https://nodejs.org/) installed on your system or Termux.
-
-1. **Clone the repository:**
+1. **Clone and Enter:**
    ```bash
    git clone [https://github.com/oneteacher365/rc-delegations.git](https://github.com/oneteacher365/rc-delegations.git)
    cd rc-delegations
 2. Install Dependencies:
-Running this command will automatically read the package.json and install the @hiveio/dhive library for you:
-
+bash
 npm install
-
-🚀 Running the Auditor
-You don't need to type the full filename anymore. I have configured a start script for you:
-
+🚀 Running the Auditor:
+bash
 npm start
 
-
-⚙️ Default Settings
-By default, hitting Enter without typing a name will audit @stayoutoftherz.
-🔜 Roadmap
-[ ] v0.0.2: Detailed list of individual RC delegation slots.
-[ ] v0.0.3: Visual manabar for HP/RC regeneration status.
-Author: @oneteacher365
+⚙️ Default Settings: Hitting Enter without a name audits @stayoutoftherz.
+​🔜 Roadmap
+​[x] v0.0.1: Basic HP/RC auditing.
+​[x] v0.0.2: TUI Dashboard and Progress Bars.
+​[ ] v0.0.3: Full detailed list for RC delegation slots.
+​Author: @oneteacher365
 License: MIT
-
-   
