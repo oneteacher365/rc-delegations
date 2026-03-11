@@ -1,10 +1,10 @@
 {
   "name": "delegations-manager",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A slim, Termux-optimized Hive delegation and RC auditor.",
-  "main": "delegations-managerv0.0.1.js",
+  "main": "auditor.js",
   "scripts": {
-    "start": "node delegations-managerv0.0.1.js"
+    "start": "node auditor.js"
   },
   "keywords": [
     "hive",
@@ -16,6 +16,7 @@
   "author": "oneteacher365",
   "license": "MIT",
   "dependencies": {
-    "@hiveio/dhive": "^1.2.8"
+    "@hiveio/dhive": "^1.2.8",
+    "blessed": "^0.1.81"
   }
 }
